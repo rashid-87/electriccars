@@ -1,0 +1,38 @@
+.information {
+  margin: 90px 0;
+  &__title {
+    color: var(--color-text);
+    font-size: 35px;
+    line-height: 33.775px;
+  }
+  &__text {
+    margin: 45px 0 20px 0;
+    color: var(--color-text);
+    font-size: 25px;
+    line-height: 24.125px;
+  }
+  &__desc {
+    margin-bottom: 25px;
+    color: var(--color-text);
+    font-size: 15px;
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media(max-width: 750px) {
+  .information {
+    margin: 40px 0;
+    &__title {
+      font-size: 30px;
+    }
+    &__text {
+      margin: 30px 0 20px 0;
+      font-size: 23px;
+    }
+    &__desc {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.charging {
+  margin: 70px 0 90px 0;
+  &__title {
+    margin-bottom: 60px;
+    color: var(--color-text);
+    font-size: 35px;
+  }
+  &__subtitle {
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: var(--color-text);
+  }
+  &__wrapper {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0px 5px 48px 0px rgba(49, 47, 47, 0.10);
+    align-items: center;
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+  &__post {
+    padding: 0 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    row-gap: 15px;
+  }
+  &__name {
+    border: none;
+    background: none;
+    width: 100%;
+    padding: 15px 0 15px 20px;
+    font-size: 13px;
+    border-radius: 43px;
+    box-shadow: 0px 5px 48px 0px rgba(49, 47, 47, 0.10);
+    color: var(--color-input);
+    background: var(--white);
+  }
+  &__active {
+    resize: none;
+    border-radius: 10px;
+  }
+  &__red {
+    color: red;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  &__btn {
+    margin-bottom: 40px;
+    padding: 10px 90px;
+    border-radius: 43px;
+    color: var(--white);
+    background: var(--bg-btn);
+    border: 1px solid var(--bg-btn);
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  &__btn:hover {
+    transition: 0.3s;
+    background: var(--white);
+    color: var(--bg-btn);
+  }
+  &__btn:active {
+    background: var(--bg-btn);
+    color: var(--white);
+  }
+}
+@media(max-width: 915px) {
+  .charging {
+    margin: 50px 0 70px 0;
+    &__title {
+      margin-bottom: 40px;
+    }
+    &__subtitle {
+      margin-bottom: 10px;
+    }
+    &__post {
+      padding: 0 30px;
+      row-gap: 10px;
+    }
+    &__btn {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media(max-width: 750px) {
+  .charging {
+    margin: 30px 0 40px 0;
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__subtitle {
+      padding-left: 10px;
+    }
+    &__post {
+      margin-top: 30px;
+      padding: 0px;
+      row-gap: 10px;
+    }
+    &__wrapper {
+      margin-top: 30px;
+      grid-template-columns: 1fr;
+    }
+  }
+}

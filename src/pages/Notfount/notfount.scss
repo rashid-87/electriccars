@@ -1,0 +1,23 @@
+.notfount {
+    padding: 50px 0;
+     &__cart {
+       max-width: 600px;
+       height: 350px;
+       margin: 0 auto;
+       background: var(--color-input);
+       text-align: center;
+       border-radius: 15px;
+     }
+     &__title {
+       padding-top: 50px;
+       text-transform: uppercase;
+       letter-spacing: 5px;
+       font-size: 5vw;
+       color: var(--bg-header);
+     }
+     &__suptitle {
+       font-size: 3.5vw;
+       color: var(--bg-header);
+       letter-spacing: 4px;
+     }
+   }

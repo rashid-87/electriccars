@@ -1,0 +1,26 @@
+.map {
+  margin: 90px 0;
+  &__title {
+    margin-bottom: 60px;
+    color: var(--color-text);
+    font-size: 35px;
+  }
+}
+@media (max-width: 942px) {
+  .map {
+    margin: 60px 0;
+    &__title {
+      margin-bottom: 40px;
+    }
+  }
+}
+@media (max-width: 632px) {
+  .map {
+    margin: 35px 0;
+    &__title {
+      margin-bottom: 25px;
+      font-size: 30px;
+      line-height: 35px;
+    }
+  }
+}

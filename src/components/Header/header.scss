@@ -1,0 +1,49 @@
+.header {
+    background: var(--bg-item);
+    padding: 15px 0;
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+  &__link {
+    font-size: 15px;
+    color: var(--color-text);
+    transition: 0.3s;
+    position: relative;
+  }
+  &__link:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    background-color: var(--bg-btn);
+    transition: 0.3s;
+  }
+  &__link:hover {
+    color: var(--bg-btn);
+  }
+  &__link:hover::after {
+    width: 100%;
+  }
+}
+@media(max-width: 850px) {
+  .header {
+    &__menu {
+      overflow-x: scroll;
+    }
+    &__menu::-webkit-scrollbar {
+     background: var(--bg-btn);
+     height: 4px;
+    }
+    &__link {
+      white-space: nowrap;
+    }
+    &__link::after {
+      display: none;
+    }
+  }
+}

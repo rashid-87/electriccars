@@ -1,0 +1,130 @@
+.aside {
+  background-image: url(../../img/header.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  &__wrapper {
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    row-gap: 20px;
+  }
+  &__title {
+    color: var(--white);
+    font-size: 44px;
+    line-height: 44px;
+  }
+  &__subtitle {
+    color: var(--white);
+    font-size: 22px;
+  }
+  &__wrapp {
+    display: flex;
+    column-gap: 45px;
+  }
+  &__btn {
+    padding: 10px 90px;
+    border-radius: 43px;
+    color: var(--white);
+    background: var(--bg-btn);
+    border: 1px solid var(--bg-btn);
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  &__btn:hover {
+    transition: 0.3s;
+    background: var(--white);
+    color: var(--bg-btn);
+  }
+  &__btn:active {
+    background: var(--bg-btn);
+    color: var(--white);
+  }
+  &__button {
+    padding: 10px 90px;
+    border-radius: 43px;
+    color: var(--white);
+    background: var(--bg-button);
+    border: 1px solid var(--bg-button);
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  &__button:hover {
+    transition: 0.3s;
+    background: var(--white);
+    color: var(--bg-button);
+  }
+  &__button:active {
+    background: var(--bg-button);
+    color: var(--white);
+  }
+  &__rows {
+    padding: 150px 0 80px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__row {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  &__text {
+    color: var(--white);
+    font-size: 15px;
+  }
+}
+@media (max-width: 850px) {
+  .aside {
+    &__wrapper {
+      padding-top: 100px;
+    }
+    &__rows {
+      padding: 100px 0 50px 0;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__row {
+      width: 100%;
+    }
+    &__img {
+      margin-left: -10px;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .aside {
+    &__wrapper {
+      width: 100%;
+      padding-top: 70px;
+    }
+    &__rows {
+      padding: 70px 0 30px 0;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .aside {
+    &__title {
+      font-size: 34px;
+      line-height: 35px;
+    }
+    &__subtitle {
+      font-size: 17px;
+    }
+    &__wrapper {
+      row-gap: 15px;
+    }
+    &__wrapp {
+      flex-direction: column;
+      gap: 15px;
+    }
+    &__rows {
+      gap: 15px;
+    }
+  }
+}

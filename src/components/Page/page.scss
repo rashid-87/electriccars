@@ -1,0 +1,39 @@
+.page {
+  background: var(--bg-header);
+  padding: 20px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+  }
+  &__btn {
+    padding: 10px 30px;
+    border-radius: 43px;
+    color: var(--white);
+    background: var(--bg-btn);
+    border: 1px solid var(--bg-btn);
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  &__btn:hover {
+    transition: 0.3s;
+    background: var(--white);
+    color: var(--bg-btn);
+  }
+  &__btn:active {
+    background: var(--bg-btn);
+    color: var(--white);
+  }
+}
+@media(max-width: 370px) {
+  .page {
+    &__btn {
+      padding: 7px 20px;
+      font-size: 14px;
+    }
+    &__img {
+      max-width: 60%;
+    }
+  }
+}

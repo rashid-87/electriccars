@@ -1,0 +1,104 @@
+.catalog {
+    margin: 55px 0;
+    &__title {
+      margin-bottom: 35px;
+      color: var(--color-text);
+      font-size: 35px;
+      line-height: 33px;
+    }
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 50px 20px;
+    }
+    &__card {
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-card);
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    &__card:hover {
+      border-radius: 10px;
+      transform: translateY(-4px);
+      transition: 0.3s;
+    }
+    &__img {
+      width: 100%;
+      object-fit: cover;
+    }
+    &__subtitle {
+      margin: 30px 0 25px 0;
+      text-align: center;
+      color: var(--color-text);
+      font-size: 25px;
+    }
+    &__row {
+      margin: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 0 30px;
+    }
+    &__wpapp {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    &__text {
+      color: var(--color-text);
+      font-size: 18px;
+    }
+    &__desc {
+      color: var(--color-text);
+      font-size: 18px;
+    }
+    &__btn {
+      margin-bottom: 30px;
+      padding: 10px 30px;
+      border-radius: 43px;
+      color: var(--white);
+      background: var(--bg-btn);
+      border: 1px solid var(--bg-btn);
+      font-size: 15px;
+      transition: 0.3s;
+    }
+    &__btn:hover {
+      transition: 0.3s;
+      background: var(--white);
+      color: var(--bg-btn);
+    }
+    &__btn:active {
+      background: var(--bg-btn);
+      color: var(--white);
+    }
+  }
+  @media (max-width: 942px) {
+    .catalog {
+      &__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+  @media (max-width: 632px) {
+    .catalog {
+      margin: 35px 0;
+      &__title {
+        margin-bottom: 30px;
+        font-size: 30px;
+      }
+      &__wrapper {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+    }
+  }
+  @media (max-width: 400px) {
+    .catalog {
+      &__row {
+        margin: 10px 0;
+        padding: 0px;
+      }
+    }
+  }
