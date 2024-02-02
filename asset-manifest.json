@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/electriccars/static/css/main.ac601013.css",
-    "main.js": "/electriccars/static/js/main.eb9c6db1.js",
+    "main.js": "/electriccars/static/js/main.7493cd17.js",
     "static/media/header.png": "/electriccars/static/media/header.c43540033d94d68447ae.png",
     "static/media/info3.png": "/electriccars/static/media/info3.c58909f964ae488a3889.png",
     "static/media/info4.png": "/electriccars/static/media/info4.bc851141bd3385cf6495.png",
@@ -38,10 +38,10 @@
     "static/media/group2.svg": "/electriccars/static/media/group2.9df7fd5207256d8f9301fbc27bfd0f35.svg",
     "index.html": "/electriccars/index.html",
     "main.ac601013.css.map": "/electriccars/static/css/main.ac601013.css.map",
-    "main.eb9c6db1.js.map": "/electriccars/static/js/main.eb9c6db1.js.map"
+    "main.7493cd17.js.map": "/electriccars/static/js/main.7493cd17.js.map"
   },
   "entrypoints": [
     "static/css/main.ac601013.css",
-    "static/js/main.eb9c6db1.js"
+    "static/js/main.7493cd17.js"
   ]
 }
