@@ -1,5 +1,5 @@
-## Одностраничный сайт лендинг.
-## Использовано библиотека React js.
-### props, useState, useForm, react-icons, swiper.
+## Многостраничный сайт.
+## Использовано библиотека React js yarn.
+### props, useState, useForm, react-icons, react-router-dom.
 ### scss, с адаптивам
-## ссылка  
+## ссылка  https://rashid-87.github.io/electriccars/
